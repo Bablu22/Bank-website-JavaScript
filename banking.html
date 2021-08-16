@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amar Bank/Dashboard</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        input[type="number"] {
+            -moz-appearance: textfield;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container mx-auto text-center">
+        <h1 class="text-4xl font-bold mt-10 text-indigo-500	">Your Account Dashboard</h1>
+
+        <div class="grid lg:grid-cols-3  text-white text-3xl gap-5 ">
+            <div class="bg-green-400 rounded-2xl py-10 mt-10">
+                <h2>Deposit</h2>
+                <h3 id="deposit-ammount">00</h3>
+            </div>
+            <div class="bg-yellow-400 rounded-2xl py-10 mt-10">
+                <h2>Withdrow</h2>
+                <h3 id="withdrow-ammount">00</h3>
+            </div>
+            <div class="bg-red-400 rounded-2xl py-10 mt-10">
+                <h2>Balance</h2>
+                <h3 id="balance-ammount">100</h3>
+            </div>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-10 text-2xl text-white mt-10">
+            <div class="bg-purple-600 py-8 rounded">
+                <h2>Please Deposit</h2>
+                <input type="number" placeholder="*******" id="deposit-input"
+                    class="block w-3/4 mx-auto rounded my-5 px-10 text-black">
+                <button class="bg-green-400 px-10 py-2 rounded" id="deposit-btn">Deposit</button>
+            </div>
+            <div class="bg-indigo-400 py-8 rounded">
+                <h2>Please Withdrow</h2>
+                <input type="number" placeholder="*******" id="withdrow-input"
+                    class="block w-3/4 mx-auto rounded my-5 px-10 text-black">
+                <button class="bg-yellow-400 px-10 py-2 rounded" id="withdrow-btn">Withdrow</button>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="banking.js"></script>
+</body>
+
+</html>
